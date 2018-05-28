@@ -1,0 +1,39 @@
+
+      
+        .main {
+            background-color: #7F462C;
+            text-align: center;
+        }
+        #currentSched{
+            
+        }
+        h6{
+            background-color: #337AB7;
+            color:#E6DEDF;
+            padding:5px;
+            border-radius: 5px;
+        }
+        li{
+            text-decoration: none;
+            display: inline;
+            padding-right:100px;
+            
+        }
+        #currentSched{
+            border: 1px solid #337AB7;
+            border-radius: 7px;
+        }
+        #addTrain{
+            margin-top:10px;
+            border: 1px solid #337AB7;
+            border-radius: 7px;    
+        }
+        .form-group{
+            padding:10px;
+        }
+        button{
+            margin:10px;
+        }
+      
+    
+   

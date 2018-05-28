@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="asset/reset.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/stylesheet.css">
+
+    <title>Train Scheduler</title>
+    
+  </head>
+  <body>
+  <div class="container">
+    <header class="jumbotron main">
+      <h1 class="display-4">Anytime is Train Time</h1>
+      <p class="lead">Choo Choo. Chee Chee.</p>  
+    </header>
+      
+    <section id="currentSched" >
+        <h6>Current Train Schedule</h6>
+        <!-- Table -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th >Train Name</th>
+                  <th >Destination</th>
+                  <th >Frequency (min)</th>
+                  <th id="nextArrival">Next Arrival</th>
+                  <th id="minAway">Minutes Away</th>
+                </tr>
+              </thead>
+             <tbody id="result"></tbody>
+    </table>
+    </section>
+    <form id="addTrain">
+        <h6>Add Train</h6>
+          <div class="form-group">
+            <label id="trainName" >Train Name</label>
+            <input type="email" class="form-control" id="trainName">
+            
+          </div>
+          <div class="form-group">
+            <label id="destination">Destination</label>
+            <input  class="form-control" id="destination">
+          </div>
+          <div class="form-group">
+            <label id="firstTrain">First Train Time (HH:mm - military time)</label>
+            <input  class="form-control" id="firstTime">
+          </div>
+          <div class="form-group">
+            <label id="frequency">Frequency (min)</label>
+            <input  class="form-control" id="frequency">
+          </div>
+        
+          <button type="submit" class="btn btn-primary" id="train">Submit</button>
+     </form>
+    
+      
+    </div>
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src ="asset/app.js/app.js"></script>
+  </body>
+</html>
