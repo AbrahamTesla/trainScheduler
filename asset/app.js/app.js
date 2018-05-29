@@ -43,10 +43,7 @@ database.ref().on('child_added',function(childSnaphshot){
     var fTrain = childSnaphshot.val().firstTrain;
     var freq = childSnaphshot.val().frequency;
     
-//    console.log("Name: " + name);
-//	console.log("Destination: " + dest);
-//	console.log("Time: " + time);
-//	console.log("Frequency: " + freq);
+
     var freq = parseInt(freq);
     
     var currentTime= moment();
